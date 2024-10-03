@@ -1,0 +1,29 @@
+7/28/2024 by Chuong Tran
+
+- Reverted PT_code_REV2 to include OG_PT_code's automatic peak-filtering processing as the primary function
+- User is able to correct data points as the secondary function
+- Improved visualization of graphs
+- Organized branched m.files
+- Added comments to scripts
+- Updated README.txt's instructions and warnings
+
+----------------------------------------------------------
+8/20/2024 by Chuong Tran
+
+- Fixed figure position such that the figures (the transducer split graphs and the detonation velocity, and any other sequential graphs) are expanded to ~700-800 pixels tall and wide, with adequate viewing of each.
+
+Disclaimer: these are hardcoded figures dimensions (supposedly), for a 1920 x 1080 display, these figures would take up 80% of your displace. For larger or smaller displays, these can take up significantly smaller or larger portions of your screen respectively.
+
+- Removed the restriction of number of possible selected peaks in the manual mode of code, opening up every possible peak that the hardcoded filter has ran picked up.
+
+Observations: For data that has a lot of noise, the manual will pick up almost all of the noise peaks.
+
+----------------------------------------------------------
+10/1/2024 by Chuong Tran
+
+- Fixed "zeroing" issue in correcting peak locations
+- Compressed code by removing phase2 and modified phase1
+- Figures will close logically on correction phase
+- std_num = 10 instead of 5 to improve peak-filtering (will change entire process in next update)
+
+Observations: Some lvm's could not be analyzed due to the std_num (hardcorded)
